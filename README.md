@@ -2,8 +2,6 @@
 
 Script `hello.go` prints `hello`
 
-Script `test.sh` checks the output of `hello.go` is `hello`
-
 ## Prerequisites
 
 - [X] Install GO on MacOS:
@@ -45,3 +43,5 @@ $ export PATH=$PATH:$(dirname $(go list -f '{{.Target}}' .))
 ```shell
 $ go run hello.go
 ```
+
+
