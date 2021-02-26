@@ -1,0 +1,9 @@
+language: go
+deploy:
+ provider: releases
+ edge: true
+ skip_cleanup: true
+ file: hello.go
+ on:
+   repo: dlavric/golang-travis-release
+   tags: true
