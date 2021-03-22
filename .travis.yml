@@ -1,6 +1,7 @@
 language: go
 script:
- - bash test.sh
+ - bash build_hello.sh
+ - bash test_hello.sh
 deploy:
  provider: releases
  edge: true
@@ -10,7 +11,7 @@ deploy:
   #travis encrypt --com <github_token> 
   #paste it here
    secure: "MSnSyhWqY4IBDrOouE0ay9rawTxHdwMIFR56GqAGzt4ihXjUCIUqEC9nB9yteF9KNWq+ADuX8Kvvd4mdDrD42kvgR461koJBf0fRA4zi+PEp+S/Z6JnqveArkIyJC7rS0Ahlvc44IJ5oVJWSkhIpf+lYywWAFgQmIJ+8VkE/rnp8dMHH8IVssUaYD2TCB7W/p1+AuVdVVWuKHepG28QPb/11KIFIN1Pse6hUvCmt1kE6HveZx2nbfysjybmGkmO0gnjwL9wWZX0XzmndxJ/D1ybflCZBczSVtd6gFZCDNFJykOnr4Enw+5o+GN0RnDlm1aoVEp3zqcDl+M/NQG5H+U/F/iYBetB73fsFayAjkpPa7KDZL8hffeReG13QU9oqEXAnaxslQ2xxfBqbFOGd8mcXR0Twseq0ZtusOmKFLxonqWpYjMLNiOsJ9I+w9O8J4OdmPJzVgJL66OsyU0wKzhE+E60aKIXhVQnG0qV1UZAdj9LcJnsud4tdgc5em4uBuIjEOavNUPJ8v3gaHKDvFvUeF5ZFog/wHTmdZZLEWiZeFKm/dqVQ/FJZto/uxt5Gs237kIKk36iZfURqjpY6eIPhXbRXT00MkzrajkY4tB9DQyYee87JXErB27YbscE0aYQ2TaID5nLM9oPeezjTZ5WSCnSSPdZIuGGvgPCVxsg="
- file: hello.go
+ file: hello
  on:
    repo: dlavric/golang-travis-release
    tags: true
