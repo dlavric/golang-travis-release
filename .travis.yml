@@ -1,4 +1,6 @@
 language: go
+script:
+ - bash test.sh
 deploy:
  provider: releases
  edge: true
